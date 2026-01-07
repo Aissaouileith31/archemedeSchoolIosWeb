@@ -25,7 +25,8 @@ def main_location(page: ft.Page):
 
     page.on_route_change = route_change
     page.go(page.route)
-ft.app(target=main_location ,assets_dir="assets/")
+ft.app(target=main_location,view=ft.WEB_BROWSER ,assets_dir="assets/")
+
 
 
 
